@@ -1,0 +1,18 @@
+.mail {
+    margin-top: 200px;
+    height: 253px;
+    margin-bottom: 200px;
+    border-radius: 25px;
+
+    .content {    
+        text-align: center;
+        margin:82px 55px 83px 56px;
+        height: 142px;
+    }
+
+    .services {
+        display: grid;
+        margin-top: 55px;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+    }
+}

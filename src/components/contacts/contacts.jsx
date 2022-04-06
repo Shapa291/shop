@@ -1,5 +1,9 @@
 function Contacts() {
-  return <div>Contacts</div>;
+  return (
+    <div>
+      <div>asdfasdf</div>
+    </div>
+  );
 }
 
 export default Contacts;
