@@ -1,8 +1,15 @@
-*{
+* {
     background-color: #1E252B;
     max-width: 960px !important;
     margin: auto;
 }
+
+//TEMPORARY STYLE
+.border {
+    border: solid 1px wheat;
+}
+
+
 //FONTS-SIZES
 
 .fs-12 {
@@ -27,6 +34,14 @@
 
 .fs-22 {
     font-size: 22px !important;
+}
+
+.fs-24 {
+    font-size: 24px !important;
+}
+
+.fs-48 {
+    font-size: 48px !important;
 }
 
 .fs-50 {
@@ -58,7 +73,8 @@
 }
 
 .col-dark-orange {
-    color: #FF6E30;
+    color: #FFA5378C;
+    ;
 }
 
 .col-orange {
@@ -66,7 +82,7 @@
 }
 
 .col-grey {
-   color:  #C4C4C4;
+    color: #C4C4C4;
 }
 
 .col-total-black {

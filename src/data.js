@@ -1,1 +1,126 @@
-export let refsOPtions = ["Вначало", "Ассортимент", "Аксессуары", "Контакты"];
+export const refsOPtions = ["Вначало", "Ассортимент", "Аксессуары", "Контакты"];
+
+export const products = [
+  {
+    name: "Ledger nano S",
+    logo: "LOGo",
+    cost: "80$",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat neque ipsum quisquam. Quae, cum voluptas.",
+    availibleColors: [
+      "black",
+      "orange",
+      "pink",
+      "green",
+      "blue",
+      "transparent",
+    ],
+  },
+  {
+    name: "Ledger nano X",
+    logo: "LOGo",
+    cost: "80$",
+    description: "",
+    availibleColors: [
+      "black",
+      "orange",
+      "pink",
+      "green",
+      "blue",
+      "transparent",
+    ],
+  },
+  {
+    name: "Ledger nano S plus",
+    logo: "LOGo",
+    cost: "80$",
+    description: "",
+    availibleColors: [
+      "black",
+      "orange",
+      "pink",
+      "green",
+      "blue",
+      "transparent",
+    ],
+  },
+  {
+    name: "Ledger nano S FP",
+    logo: "LOGo",
+    cost: "80$",
+    description: "",
+    availibleColors: [
+      "black",
+      "orange",
+      "pink",
+      "green",
+      "blue",
+      "transparent",
+    ],
+  },
+  {
+    name: "Ledger nano X FP",
+    logo: "LOGo",
+    cost: "80$",
+    description: "",
+    availibleColors: [
+      "black",
+      "orange",
+      "pink",
+      "green",
+      "blue",
+      "transparent",
+    ],
+  },
+  {
+    name: "Ledger Backup pack",
+    logo: "LOGo",
+    cost: "80$",
+    description: "",
+    availibleColors: [
+      "black",
+      "orange",
+      "pink",
+      "green",
+      "blue",
+      "transparent",
+    ],
+  },
+];
+
+export const accesories = [
+  {
+    name: "Ledger OTG Kit",
+    logo: "LOGo",
+    cost: "80$",
+    description: "",
+    availibleColors: [],
+  },
+  {
+    name: "Cryptosteel Capsule Solo",
+    logo: "LOGo",
+    cost: "80$",
+    description: "",
+    availibleColors: [],
+  },
+  {
+    name: "The Billfodl",
+    logo: "LOGo",
+    cost: "80$",
+    description: "",
+    availibleColors: [],
+  },
+  {
+    name: "Swivel Pack",
+    logo: "LOGo",
+    cost: "80$",
+    description: "",
+    availibleColors: [],
+  },
+  {
+    name: "Cryptotag Zeus",
+    logo: "LOGo",
+    cost: "80$",
+    description: "",
+    availibleColors: [],
+  },
+];
