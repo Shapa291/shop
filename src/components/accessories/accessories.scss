@@ -1,0 +1,19 @@
+.accessories {
+    min-height: 638px;
+
+    display: grid;
+    grid-template-columns:50% 50%;
+    margin-bottom: 200px;
+
+    .descritpion {
+        margin-top: 10px;
+        margin-left: 0;
+        height: 300px;
+        width: 427px;
+    }
+
+    .accessories-list{
+        width: 600px;
+        height: 638px;
+    }
+}
