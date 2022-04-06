@@ -5,7 +5,7 @@ import "./hero.scss";
 
 function Hero() {
   return (
-    <div>
+    <div className="hero">
       <Header />
       <InfoBlock />
       <SocialLinks />

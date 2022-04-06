@@ -1,0 +1,45 @@
+.card {
+    width: 392px;
+    height: 314px;
+    margin-left: 0;
+    margin-right: 15%;
+
+    .content {
+        margin: 33px;
+        height: 248px;
+        width: 326px;
+
+        .btn {
+            width: 120px;
+            margin-right: 0;
+            margin-bottom: 0;
+            text-align: right;
+        }
+
+        .item-name {
+            margin-left: 0;
+            margin-bottom: 30px;
+            max-width: 228px;
+            height: 80px;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+
+            .price {
+                padding-top: 1px;
+                padding-right: 5px;
+                text-align: right;
+                margin-right: 0;
+
+                height: 80px;
+            }
+        }
+
+        .description {
+            line-height: 30px;
+        }
+    }
+}
+
+.product-list {
+    margin-left: 0px;
+}
