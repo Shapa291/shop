@@ -1,11 +1,9 @@
 import { useState } from "react";
 import "./card.scss";
 
-
 function Card({ type, name, logo, cost, description }) {
-  
-  const [modalOpen, setModalOpen] = useState(false)
-  
+  const [modalOpen, setModalOpen] = useState(false);
+
   let cardHeight, cardWidth, my, mx, cardBodyHeight, cardBodyWidth;
   if (type === "accessory") {
     cardHeight = 284;
@@ -23,7 +21,6 @@ function Card({ type, name, logo, cost, description }) {
     cardBodyWidth = 326;
   }
 
-
   return (
     <div
       style={{ width: `${cardWidth}px`, height: `${cardHeight}` }}
@@ -38,10 +35,14 @@ function Card({ type, name, logo, cost, description }) {
         className="content"
       >
         <div className="item-name col-white">
-          <div><img src={require(`../../assets/ledgers/${logo}.png`)} /></div>
+          <div>
+            <img src={require(`../../assets/ledgers/${logo}.png`)} />
+          </div>
           <div className="price">
             <div className="price-name fw-500 fs-24 col-grey">{name}</div>
-            <div className="price-number fw-400 fs-26 col-dark-orange">{cost}</div>
+            <div className="price-number fw-400 fs-26 col-dark-orange">
+              {cost}
+            </div>
           </div>
         </div>
         <div className="description fs-16px fw-400 col-grey">{description}</div>

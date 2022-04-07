@@ -5,6 +5,7 @@
     height: 314px;
     margin-left: 0;
     margin-right: 15%;
+    position: relative;
 
     .content {
         margin: 33px;
@@ -57,6 +58,8 @@
 .card:hover {
     background-image: url('../../assets/activeCard.png');
     background-size: 392px 314px;
+    bottom: 10px;
+    left: 5px;
 
     &>* {
         background: rgba(190, 191, 195, 0);
