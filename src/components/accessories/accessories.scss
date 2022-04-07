@@ -11,6 +11,13 @@
         margin-left: 0;
         height: 300px;
         width: 427px;
+        
+        .header{
+           margin-bottom: 30px;
+        }
+        .descr {
+            width: 100%;
+        }
     }
 
     .accessories-list{
@@ -22,8 +29,4 @@
         grid-row-gap: 50px;
         grid-column-gap: 24px;
     }
-}
-
-.accessories border {
-    
 }

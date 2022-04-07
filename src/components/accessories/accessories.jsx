@@ -4,9 +4,15 @@ import "./accessories.scss";
 
 function Accessories() {
   return (
-    <div className="accessories border">
-      <div className="border descritpion">sadfasdf</div>
-      <div className="border accessories-list">
+    <div className="accessories">
+      <div className="descritpion fw-500">
+        <div className="col-white fs-48">Аксессуары</div>
+        <div className="col-grey fs-18">
+          Также у нас имеются различные акссесураы для осущетсвелени еще большей
+          безопасности ваших крипто активов
+        </div>
+      </div>
+      <div className="accessories-list">
         {accesories.map((product, index) => {
           return (
             <Card
