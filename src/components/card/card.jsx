@@ -38,7 +38,7 @@ function Card({ type, name, logo, cost, description }) {
         className="content"
       >
         <div className="item-name col-white">
-          <div>{logo}</div>
+          <div><img src={require(`../../assets/ledgers/${logo}.png`)} /></div>
           <div className="price">
             <div className="fw-500 fs-24 col-grey">{name}</div>
             <div className="fw-400 fs-18 col-dark-orange">{cost}</div>

@@ -17,10 +17,14 @@
         display: grid;
         margin-top: 55px;
         background: rgba(190, 191, 195, 0);
-        grid-template-columns: 3fr 3fr 3fr 3fr;
+        grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr;
 
         div {
             background: rgba(190, 191, 195, 0);
+            img {
+                background: rgba(190, 191, 195, 0);
+                width: 80%;
+            }
         }
     }
 
