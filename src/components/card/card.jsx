@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./card.scss";
 
+
 function Card({ type, name, logo, cost, description }) {
   
   const [modalOpen, setModalOpen] = useState(false)
@@ -21,6 +22,7 @@ function Card({ type, name, logo, cost, description }) {
     cardBodyHeight = 248;
     cardBodyWidth = 326;
   }
+
 
   return (
     <div

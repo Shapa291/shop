@@ -47,3 +47,7 @@
 .product-list {
     margin-left: 0px;
 }
+.card:hover {
+    background-image: url('../../assets/activeCard.png');
+    background-size: 392px 314px;
+}
