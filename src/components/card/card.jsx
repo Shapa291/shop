@@ -40,12 +40,12 @@ function Card({ type, name, logo, cost, description }) {
         <div className="item-name col-white">
           <div><img src={require(`../../assets/ledgers/${logo}.png`)} /></div>
           <div className="price">
-            <div className="fw-500 fs-24 col-grey">{name}</div>
-            <div className="fw-400 fs-20 col-dark-orange">{cost}</div>
+            <div className="price-name fw-500 fs-24 col-grey">{name}</div>
+            <div className="price-number fw-400 fs-20 col-dark-orange">{cost}</div>
           </div>
         </div>
         <div className="description fs-16px fw-400 col-grey">{description}</div>
-        <div className="btn  col-white fw-600 fs-16">Подробнее</div>
+        <div className="btn col-white fw-600 fs-16">Подробнее</div>
       </div>
     </div>
   );

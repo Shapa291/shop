@@ -1,3 +1,5 @@
+@import "./../../styles/variables.scss";
+
 .card {
     width: 392px;
     height: 314px;
@@ -39,7 +41,6 @@
                 margin-right: 0;
 
                 height: 80px;
-
             }
         }
 
@@ -60,9 +61,24 @@
     &>* {
         background: rgba(190, 191, 195, 0);
 
-        div, img, .btn:disabled {
+        div,
+        img {
             background: rgba(190, 191, 195, 0);
+        }
 
+        .btn:hover {
+            background-color: $col-orange-btn;
+        }
+
+        .price-name,
+        .description,
+        .btn,
+        img {
+            color: $col-active-white;
+        }
+
+        .price-number {
+            color: $col-active-orange;
         }
     }
 }
