@@ -41,7 +41,7 @@ function Card({ type, name, logo, cost, description }) {
           <div><img src={require(`../../assets/ledgers/${logo}.png`)} /></div>
           <div className="price">
             <div className="price-name fw-500 fs-24 col-grey">{name}</div>
-            <div className="price-number fw-400 fs-20 col-dark-orange">{cost}</div>
+            <div className="price-number fw-400 fs-26 col-dark-orange">{cost}</div>
           </div>
         </div>
         <div className="description fs-16px fw-400 col-grey">{description}</div>
