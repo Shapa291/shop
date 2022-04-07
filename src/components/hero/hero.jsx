@@ -8,7 +8,6 @@ function Hero() {
     <div className="hero">
       <Header />
       <InfoBlock />
-      <SocialLinks />
     </div>
   );
 }

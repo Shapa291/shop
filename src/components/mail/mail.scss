@@ -3,11 +3,14 @@
     height: 253px;
     margin-bottom: 200px;
     border-radius: 25px;
+    background-image: url('../../assets/mailBg.png');
+    background-size: cover;
 
     .content {    
         text-align: center;
         margin:82px 55px 83px 56px;
         height: 142px;
+        background: rgba(190, 191, 195, 0)
     }
 
     .services {
@@ -15,4 +18,6 @@
         margin-top: 55px;
         grid-template-columns: 3fr 3fr 3fr 3fr;
     }
+
+    
 }
