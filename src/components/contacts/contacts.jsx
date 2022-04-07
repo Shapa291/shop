@@ -1,3 +1,5 @@
+import "./contacts.scss";
+
 function Contacts() {
   return (
     <div>

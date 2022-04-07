@@ -1,55 +1,65 @@
-//header
 @import '../../styles/variables.scss';
 
-.hero{
+.hero {
     margin-bottom: 200px;
-}
 
-.header {
-    margin-top: 26px;
-    height: 48px;
-    position: relative;
+    .header {
+        height: 48px;
+        position: relative;
 
-    .content {
-        position: absolute;
-        top: 50%;
-        margin-top: 2*$one-line-height;
-        line-height: 33px;
+        .content {
+            position: absolute;
+            top: 50%;
+            margin-top: 2*$one-line-height;
+            line-height: 33px;
 
-        .wrapper {
-            display: grid;
-            grid-template-columns: 2fr 6fr;
+            .wrapper {
+                display: grid;
+                grid-template-columns: 2fr 6fr;
 
-            .logo {
-                margin-right: 25%;
-            }
+                .logo {
+                    margin-right: 25%;
+                }
 
-            ul.refs {
-                margin: 0;
-                margin-left: 50%;
-                padding: 4px;
-            }
+                ul.refs {
+                    margin: 0;
+                    margin-left: 75%;
+                    padding: 4px;
+                }
 
-            ul.refs li {
-                display: inline;
-                margin-right: 10px;
-                padding: 3px;
+                ul.refs li {
+                    display: inline;
+                    margin-right: 10px;
+                    padding: 3px;
+                }
             }
         }
     }
-}
 
-.info-block {
-   
-    margin-top: 104px;
-    height: 354px;
-    width: 600px;
+    .info-block {
 
-    .header {
-        margin-bottom: 30px;
+        margin-top: 104px;
+        margin-left: 0;
+        height: 354px;
+        width: 600px;
+
+        .header {
+            margin-bottom: 30px;
+            height: auto;
+        }
+
+        .description {
+            margin-bottom: 30px;
+        }
     }
 
-    .description {
-        margin-bottom: 80px;
+
+    .social-links img {
+        width: 50px;
+    }
+
+    .social-links {
+        margin-top: 140px;
+        margin-left: 25px;
     }
 }

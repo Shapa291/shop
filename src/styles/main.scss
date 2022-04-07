@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "./variables.scss";
 
 * {
     background-color: #1E252B;
@@ -43,12 +45,21 @@
     font-size: 24px !important;
 }
 
+.fs-26 {
+    font-size: 26px !important;
+}
+
+
 .fs-48 {
     font-size: 48px !important;
 }
 
 .fs-50 {
     font-size: 50px !important;
+}
+
+.fs-70 {
+    font-size: 70px !important;
 }
 
 //FONTS-WEIGHT
@@ -72,7 +83,7 @@
 //COLORS
 
 .col-white {
-    color: #FFFFFF;
+    color: $col-white;
 }
 
 .col-dark-orange {
@@ -84,8 +95,12 @@
     color: #FFA537;
 }
 
+.col-active-btn {
+    color: $col-orange-btn;
+}
+
 .col-grey {
-    color: #C4C4C4;
+    color: $col-grey;
 }
 
 .col-total-black {
@@ -96,7 +111,19 @@
     color: #2C353D33;
 }
 
-.col-hard-white{
-    color:#FFFFFFCC;
+.col-hard-white {
+    color: #FFFFFFCC;
     ;
+}
+
+//BUTTONS
+.btn {
+    padding: 9px 35px;
+    border-radius: 8px;
+    color: $col-grey;
+}
+
+.btn:hover {
+    background-color: $col-orange-btn;
+    color: $col-white;
 }

@@ -1,0 +1,39 @@
+.modal {
+    margin-bottom: 50px;
+    height: 650px;
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+
+    &>div:first-child {
+        width: 100%;
+        height: 100%;
+    }
+
+    &>div {
+        width: 100%;
+        height: auto;
+    }
+
+    &>div:last-child {
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .content {
+        .name {
+            margin-top: 2%;
+            margin-bottom: 4%;
+            text-align: center;
+        }
+       
+        .price-block {
+           display: grid;
+           padding-top: 10%;
+           grid-template-columns: 1fr 1fr;
+
+        }
+    }
+}

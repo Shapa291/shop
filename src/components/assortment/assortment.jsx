@@ -6,9 +6,11 @@ function Assortment() {
   return (
     <div className="assortment">
       <div className="info-block">
-        <div className="header fs-48 col-white col-white">Наш Ассортимент</div>
+        <div className="header fs-48 col-white col-white">
+          Ассортимент кошельков
+        </div>
         <div className="description fs-18 fw-500 col-grey">
-          Списко товаро куотрые вы можете заказть
+          У нас Вы можете приеобрести любую продукцию от Ledger
         </div>
       </div>
       <div className="product-list">
