@@ -1,12 +1,9 @@
-//header
 @import '../../styles/variables.scss';
 
 .hero {
     margin-bottom: 200px;
 
-
     .header {
-        margin-top: 26px;
         height: 48px;
         position: relative;
 
@@ -26,7 +23,7 @@
 
                 ul.refs {
                     margin: 0;
-                    margin-left: 50%;
+                    margin-left: 75%;
                     padding: 4px;
                 }
 

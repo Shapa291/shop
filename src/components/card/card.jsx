@@ -1,6 +1,10 @@
+import { useState } from "react";
 import "./card.scss";
 
 function Card({ type, name, logo, cost, description }) {
+  
+  const [modalOpen, setModalOpen] = useState(false)
+  
   let cardHeight, cardWidth, my, mx, cardBodyHeight, cardBodyWidth;
   if (type === "accessory") {
     cardHeight = 284;
@@ -39,7 +43,7 @@ function Card({ type, name, logo, cost, description }) {
           </div>
         </div>
         <div className="description fs-16px fw-400 col-grey">{description}</div>
-        <div className="btn col-grey fw-600 fs-16">Подробнее</div>
+        <div className="btn  col-white fw-600 fs-16">Подробнее</div>
       </div>
     </div>
   );
