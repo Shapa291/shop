@@ -7,6 +7,10 @@
         height: 48px;
         position: relative;
 
+        .logo img {
+            height: 35px;
+            margin-top: 10px;
+        }
         .content {
             position: absolute;
             top: 50%;

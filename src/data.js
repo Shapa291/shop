@@ -3,7 +3,7 @@ export const refsOPtions = ["Вначало", "Ассортимент", "Акс�
 export const products = [
   {
     name: "Ledger nano S",
-    logo: "L",
+    logo: "ledgerS",
     cost: "80$",
     description: "Для работы на компьютере",
     availibleColors: [
@@ -23,7 +23,7 @@ export const products = [
   },
   {
     name: "Ledger nano X",
-    logo: "L",
+    logo: "ledgerX",
     cost: "80$",
     description: "Для работы на смартфоне или компьютере",
     availibleColors: [
@@ -37,7 +37,7 @@ export const products = [
   },
   {
     name: "Ledger nano S plus",
-    logo: "LOGo",
+    logo: "ledgerS+",
     cost: "80$",
     description: "Для работы на смартфоне или компьютере",
     availibleColors: [
@@ -51,7 +51,7 @@ export const products = [
   },
   {
     name: "Ledger nano S FP",
-    logo: "LOGo",
+    logo: "ledgerSFP",
     cost: "80$",
     description: "Комплект содержит 3 Ledger Nano S",
     availibleColors: [
@@ -65,7 +65,7 @@ export const products = [
   },
   {
     name: "Ledger nano X FP",
-    logo: "LOGo",
+    logo: "ledgerXFP",
     cost: "80$",
     description: "Комплект содержит 3 Ledger Nano X",
     availibleColors: [
@@ -79,7 +79,7 @@ export const products = [
   },
   {
     name: "Ledger Backup pack",
-    logo: "L",
+    logo: "ledgerBP",
     cost: "80$",
     description: "Комплект содержит Ledger Nano S и Ledger Nano X",
     availibleColors: [
@@ -96,7 +96,7 @@ export const products = [
 export const accesories = [
   {
     name: "Ledger OTG Kit",
-    logo: "L",
+    logo: "ledgerOTG",
     cost: "80$",
     description:
       "Набор из 3 различных кабелей, для подключения к телефону или ноутбуку",
@@ -104,7 +104,7 @@ export const accesories = [
   },
   {
     name: "Cryptosteel Capsule Solo",
-    logo: "LOGo",
+    logo: "ledgerCS",
     cost: "80$",
     description:
       "Прочная стальная капсула для защиты фразы восстановления из 24 слов",
@@ -112,7 +112,7 @@ export const accesories = [
   },
   {
     name: "The Billfodl",
-    logo: "L",
+    logo: "ledgerBF",
     cost: "80$",
     description:
       "Прочный стальной футляр для хранения и защиты фразы восстановления из 24 слов",
@@ -120,7 +120,7 @@ export const accesories = [
   },
   {
     name: "Swivel Pack",
-    logo: "L",
+    logo: "ledgerSP",
     cost: "80$",
     description:
       "Пара поворотных крышек с гравировкой для защиты и придания уникального вида Ledger Nano S",
@@ -128,7 +128,7 @@ export const accesories = [
   },
   {
     name: "Cryptotag Zeus",
-    logo: "LOGo",
+    logo: "ledgerCT",
     cost: "80$",
     description: "Титановая пластина для хранения вашей фразы из 24 слов",
     availibleColors: [],
