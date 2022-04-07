@@ -1,5 +1,6 @@
 import "./card.scss";
 
+
 function Card({ type, name, logo, cost, description }) {
   let cardHeight, cardWidth, my, mx, cardBodyHeight, cardBodyWidth;
   if (type === "accessory") {
@@ -18,10 +19,11 @@ function Card({ type, name, logo, cost, description }) {
     cardBodyWidth = 326;
   }
 
+
   return (
     <div
       style={{ width: `${cardWidth}px`, height: `${cardHeight}` }}
-      className="card border"
+      className="card "
     >
       <div
         style={{
