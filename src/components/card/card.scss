@@ -3,14 +3,12 @@
     height: 314px;
     margin-left: 0;
     margin-right: 15%;
-    background: rgba(190, 191, 195, 0);
 
     .content {
         margin: 33px;
         height: 248px;
         width: 326px;
         position: relative;
-        background: rgba(190, 191, 195, 0);
 
         .btn {
             width: auto;
@@ -20,7 +18,6 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            background: rgba(190, 191, 195, 0);
         }
 
         .item-name {
@@ -30,38 +27,42 @@
             height: 80px;
             display: grid;
             grid-template-columns: 1fr 3fr;
-            background: rgba(190, 191, 195, 0);
 
             div img {
                 height: 64px;
-                background: rgba(190, 191, 195, 0);
             }
 
             .price {
-                background: rgba(190, 191, 195, 0);
                 padding-top: 1px;
                 padding-right: 5px;
                 text-align: right;
                 margin-right: 0;
 
                 height: 80px;
-                
+
             }
         }
 
         .description {
             line-height: 30px;
-            background: rgba(190, 191, 195, 0);
         }
     }
 }
 
 .product-list {
     margin-left: 0px;
-    background: rgba(190, 191, 195, 0);
 }
+
 .card:hover {
     background-image: url('../../assets/activeCard.png');
     background-size: 392px 314px;
-    
+
+    &>* {
+        background: rgba(190, 191, 195, 0);
+
+        div, img, .btn:disabled {
+            background: rgba(190, 191, 195, 0);
+
+        }
+    }
 }
