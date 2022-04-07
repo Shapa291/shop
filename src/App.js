@@ -12,7 +12,6 @@ function App() {
       <Assortment />
       <Mail />
       <Accessories />
-      <Contacts />
       <Modal />
     </div>
   );
