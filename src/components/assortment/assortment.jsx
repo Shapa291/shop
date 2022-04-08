@@ -22,7 +22,6 @@ function Assortment() {
               logo={product.logo}
               description={product.description}
               cost={product.cost}
-              modalLogo={product.modalLogo}
               peculiarities={product.peculiarities}
               fullDescription={product.fullDescription}
             />

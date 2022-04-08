@@ -10,7 +10,6 @@ function Card({
   description,
   peculiarities,
   fullDescription,
-  modalLogo,
 }) {
   const [showModal, seetShowMoadl] = useState(false);
 
@@ -72,7 +71,7 @@ function Card({
           peculiarities={peculiarities}
           fullDescription={fullDescription}
           cost={cost}
-          modalLogo={modalLogo}
+          logo={logo}
           onHide={handleCloseModal}
         />
       )}
