@@ -15,7 +15,6 @@ function Modal({ onHide, name, fullDescription, cost, logo, peculiarities }) {
       >``
         <div className="logo">
         <div className="logoImage"><img src={require(`../../assets/modalImages/${logo}.png`)}/></div>
-          {/* <div className="logoImage"><img src={require(`../../assets/ledgers/modalImages/${logo}.png`)}/></div> */}
         </div>
         <div className="modal-content">
           <div className="name fs-26 fw-600">{name}</div>
