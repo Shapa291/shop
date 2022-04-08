@@ -12,9 +12,10 @@ function Modal({ onHide, name, fullDescription, cost, logo, peculiarities }) {
           event.preventDefault();
           event.stopPropagation();
         }}
-      >``
+      >
+        ``
         <div className="logo">
-        <div className="logoImage"><img src={require(`../../assets/modalImages/${logo}.png`)}/></div>
+          <img alt="logo" src={require(`../../assets/modalImages/${logo}.png`)} />
         </div>
         <div className="modal-content">
           <div className="name fs-26 fw-600">{name}</div>
