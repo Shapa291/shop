@@ -22,6 +22,8 @@ function Accessories() {
               logo={product.logo}
               description={product.description}
               cost={product.cost}
+              peculiarities={product.peculiarities}
+              fullDescription={product.fullDescription}
             />
           );
         })}

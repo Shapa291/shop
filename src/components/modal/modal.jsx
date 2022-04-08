@@ -38,7 +38,7 @@ function Modal({ onHide, name, fullDescription, cost, logo, peculiarities }) {
             <div className="btn fw-600 fs-16">Заказать</div>
           </div>
         </div>
-        <div className="description border">
+        <div className="description col-grey fs-14 fw-400">
           {fullDescription}
         </div>
       </div>
