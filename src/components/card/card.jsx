@@ -4,7 +4,7 @@ import "./card.scss";
 function Card({ type, name, logo, cost, description }) {
   const [modalOpen, setModalOpen] = useState(false);
 
-  let cardHeight, cardWidth, my, mx, cardBodyHeight, cardBodyWidth;
+  let cardHeight, cardWidth, my, mx, cardBodyHeight, cardBodyWidth, cardClass;
   if (type === "accessory") {
     cardHeight = 284;
     cardWidth = 288;
@@ -12,6 +12,7 @@ function Card({ type, name, logo, cost, description }) {
     cardBodyWidth = 245;
     my = 28;
     mx = 21;
+    cardClass = "smallCard"
   } else {
     my = 33;
     mx = 33;
@@ -19,12 +20,13 @@ function Card({ type, name, logo, cost, description }) {
     cardWidth = 392;
     cardBodyHeight = 248;
     cardBodyWidth = 326;
+    cardClass = "card"
   }
 
   return (
     <div
       style={{ width: `${cardWidth}px`, height: `${cardHeight}` }}
-      className="card"
+      className={cardClass}
     >
       <div
         style={{
