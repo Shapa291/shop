@@ -23,6 +23,7 @@ function Accessories() {
               description={product.description}
               cost={product.cost}
               peculiarities={product.peculiarities}
+              modalLogo={product.modalLogo}
               fullDescription={product.fullDescription}
             />
           );

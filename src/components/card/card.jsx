@@ -2,7 +2,16 @@ import { useState } from "react";
 import Modal from "../modal/modal";
 import "./card.scss";
 
-function Card({ type, name, logo, cost, description, peculiarities, fullDescription }) {
+function Card({
+  type,
+  name,
+  logo,
+  cost,
+  description,
+  peculiarities,
+  fullDescription,
+  modalLogo,
+}) {
   const [showModal, seetShowMoadl] = useState(false);
 
   const handleShowModal = () => seetShowMoadl(true);
@@ -63,6 +72,7 @@ function Card({ type, name, logo, cost, description, peculiarities, fullDescript
           peculiarities={peculiarities}
           fullDescription={fullDescription}
           cost={cost}
+          modalLogo={modalLogo}
           onHide={handleCloseModal}
         />
       )}

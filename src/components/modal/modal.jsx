@@ -8,7 +8,7 @@ const peculiarities = [
   "Простое восстановление данных",
 ];
 
-function Modal({ onHide, name, fullDescription, cost, logo, peculiarities }) {
+function Modal({ onHide, name, fullDescription, cost, modalLogo, peculiarities }) {
   useKeyPress("Escape", onHide);
 
   return (
@@ -21,7 +21,9 @@ function Modal({ onHide, name, fullDescription, cost, logo, peculiarities }) {
         }}
       >
         <div className="logo">
-          <div className="">{logo}</div>
+          <div className="">
+            <img src={require(`../../assets/modalImages/${modalLogo}.png`)} />
+          </div>
         </div>
         <div className="modal-content">
           <div className="name fs-26 fw-600">{name}</div>
