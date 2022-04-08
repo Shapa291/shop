@@ -1,8 +1,12 @@
 import { useState } from "react";
+import Modal from "../modal/modal";
 import "./card.scss";
 
 function Card({ type, name, logo, cost, description }) {
-  const [modalOpen, setModalOpen] = useState(false);
+  const [showModal, seetShowMoadl] = useState(false);
+
+  const handleShowModal = () => seetShowMoadl(true);
+  const handleCloseModal = () => seetShowMoadl(false);
 
   let cardHeight, cardWidth, my, mx, cardBodyHeight, cardBodyWidth, cardClass;
   if (type === "accessory") {
@@ -12,7 +16,7 @@ function Card({ type, name, logo, cost, description }) {
     cardBodyWidth = 245;
     my = 28;
     mx = 21;
-    cardClass = "smallCard"
+    cardClass = "smallCard";
   } else {
     my = 33;
     mx = 33;
@@ -20,7 +24,7 @@ function Card({ type, name, logo, cost, description }) {
     cardWidth = 392;
     cardBodyHeight = 248;
     cardBodyWidth = 326;
-    cardClass = "card"
+    cardClass = "card";
   }
 
   return (
@@ -48,8 +52,10 @@ function Card({ type, name, logo, cost, description }) {
           </div>
         </div>
         <div className="description fs-16px fw-400 col-grey">{description}</div>
-        <div className="btn col-white fw-600 fs-16">Подробнее</div>
+        <div className="btn col-white fw-600 fs-16" onClick={handleShowModal}>Подробнее</div>
       </div>
+
+      {showModal && <Modal onHide={handleCloseModal}/>}
     </div>
   );
 }

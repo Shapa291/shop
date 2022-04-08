@@ -1,12 +1,15 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import "./variables.scss";
 
 * {
     background-color: #1E252B;
-    max-width: 1224px !important;
     margin: auto;
     font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1224px !important;
+
 }
 
 //TEMPORARY STYLE

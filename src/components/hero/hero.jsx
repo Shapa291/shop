@@ -4,7 +4,7 @@ import "./hero.scss";
 
 function Hero() {
   return (
-    <div className="hero">
+    <div className="hero container">
       <div className="navbar">
         <Header />
       </div>

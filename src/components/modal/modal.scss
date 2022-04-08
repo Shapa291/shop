@@ -1,7 +1,36 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+
+    &::before {
+        z-index: 1;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        opacity: 1;
+    }
+}
+
 .modal {
-    margin-bottom: 50px;
-    height: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 700px;
     width: 80%;
+    z-index: 10;
+
+    opacity: 1;
+    overflow: hidden;
 
     display: grid;
     grid-template-columns: 3fr 4fr;
@@ -32,16 +61,14 @@
             margin-bottom: 4%;
             text-align: center;
         }
-       
+
         .price-block {
-           display: grid;
-           padding-top: 10%;
-           grid-template-columns: 1fr 1fr;
+            display: grid;
+            padding-top: 10%;
+            grid-template-columns: 1fr 1fr;
 
         }
     }
 
-    .description{
-
-    }
+    .description {}
 }

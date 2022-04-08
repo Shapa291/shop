@@ -4,7 +4,7 @@ import "./accessories.scss";
 
 function Accessories() {
   return (
-    <div className="accessories">
+    <div className="accessories container">
       <div className="descritpion fw-500">
         <div className="col-white fs-48">Аксессуары</div>
         <div className="col-grey fs-18">
