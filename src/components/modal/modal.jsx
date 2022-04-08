@@ -1,3 +1,4 @@
+import { useKeyPress } from "../../hooks/useKeyPress";
 import "./modal.scss";
 
 const peculiarities = [
@@ -10,9 +11,17 @@ const peculiarities = [
 ];
 
 function Modal({ onHide, name, fullDescription, cost, colors, logo, pecul }) {
+  useKeyPress("Escape", onHide);
+
   return (
     <div className="modal-container" onClick={onHide}>
-      <div className="modal border col-white">
+      <div
+        className="modal border col-white"
+        onClick={(event) => {
+          event.preventDefault();
+          event.stopPropagation();
+        }}
+      >
         <div className="border logo">
           <div className="">{logo}</div>
         </div>

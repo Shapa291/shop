@@ -61,7 +61,7 @@
     bottom: 10px;
     left: 5px;
 
-    &>* {
+    &>*:only-child {
         background: rgba(190, 191, 195, 0);
 
         div,
@@ -145,7 +145,7 @@
     bottom: 10px;
     left: 5px;
 
-    &>* {
+    &>*:only-child {
         background: rgba(190, 191, 195, 0);
 
         div,
