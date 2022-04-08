@@ -1,7 +1,14 @@
 import { useKeyPress } from "../../hooks/useKeyPress";
 import "./modal.scss";
 
-function Modal({ onHide, name, fullDescription, cost, modalLogo, peculiarities }) {
+const peculiarities = [
+  "До 20 приложений на одном кошельке",
+  "Все операции подтверждаются лично, нажатием кнопок на корпусе",
+  "Высокая безопасность с сертифицированным чипом (CC EAL5+)",
+  "Простое восстановление данных",
+];
+
+function Modal({ onHide, name, fullDescription, cost, logo, peculiarities }) {
   useKeyPress("Escape", onHide);
 
   return (
@@ -12,9 +19,9 @@ function Modal({ onHide, name, fullDescription, cost, modalLogo, peculiarities }
           event.preventDefault();
           event.stopPropagation();
         }}
-      >
+      >``
         <div className="logo">
-            <img src={require(`../../assets/modalImages/${modalLogo}.png`)} />
+          <div className="logoImage"><img src={require(`../../assets/ledgers/modalImages${logo}.webp`)}/></div>
         </div>
         <div className="modal-content">
           <div className="name fs-26 fw-600">{name}</div>

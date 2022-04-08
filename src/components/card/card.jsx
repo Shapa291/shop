@@ -51,7 +51,7 @@ function Card({
       >
         <div className="item-name col-white">
           <div>
-            <img src={require(`../../assets/ledgers/${logo}.png`)} />
+            <img src={require(`../../assets/ledgers/ledger${logo}.png`)} />
           </div>
           <div className="price">
             <div className="price-name fw-500 fs-24 col-grey">{name}</div>
