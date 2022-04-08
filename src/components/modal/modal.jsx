@@ -1,13 +1,6 @@
 import { useKeyPress } from "../../hooks/useKeyPress";
 import "./modal.scss";
 
-const peculiarities = [
-  "До 20 приложений на одном кошельке",
-  "Все операции подтверждаются лично, нажатием кнопок на корпусе",
-  "Высокая безопасность с сертифицированным чипом (CC EAL5+)",
-  "Простое восстановление данных",
-];
-
 function Modal({ onHide, name, fullDescription, cost, modalLogo, peculiarities }) {
   useKeyPress("Escape", onHide);
 
