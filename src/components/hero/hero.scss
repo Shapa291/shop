@@ -13,11 +13,13 @@
     .header {
         height: 48px;
         position: relative;
+        background-color: $col-of-site;
 
         .logo img {
             height: 35px;
-            margin-top: 10px;
+            margin-top: 4px;
         }
+
         .content {
             position: absolute;
             top: 50%;

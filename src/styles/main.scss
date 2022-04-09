@@ -2,14 +2,16 @@
 @import "./variables.scss";
 
 * {
-    background-color: #1E252B;
-    margin: auto;
     font-family: 'Montserrat', sans-serif;
+    margin: 0px auto;
+}
+
+body {
+    background-color: $col-of-site;
 }
 
 .container {
-    max-width: 1224px !important;
-
+    max-width: 1224px;
 }
 
 //TEMPORARY STYLE
@@ -17,9 +19,7 @@
     border: solid 1px wheat;
 }
 
-
 //FONTS-SIZES
-
 .fs-12 {
     font-size: 12px !important;
 }
