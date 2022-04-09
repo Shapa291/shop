@@ -4,7 +4,7 @@
 .card {
     width: 392px;
     height: 314px;
-    
+
     @include cardStyle;
 }
 
@@ -13,8 +13,6 @@
     background-size: 392px 314px;
     @include activeCardStyle;
 }
-
-
 
 .smallCard {
     width: 288px;
