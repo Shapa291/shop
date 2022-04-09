@@ -1,0 +1,13 @@
+.bottomTelegram {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    img {
+
+        width: 60px;
+        display: block;
+        margin: 0 auto;
+    }
+}
