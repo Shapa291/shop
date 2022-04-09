@@ -2,9 +2,17 @@
 @import "./variables.scss";
 
 * {
-    background-color: #1E252B;
     margin: auto;
     font-family: 'Montserrat', sans-serif;
+}
+
+*:only-child {
+    background-color: #1E252B;
+    
+}
+
+.App {
+    background-color: #1E252B;
 }
 
 .container {
