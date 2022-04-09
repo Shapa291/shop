@@ -22,7 +22,7 @@
             margin-bottom: 5%;
             text-align: right;
             position: absolute;
-            bottom: 0;
+            margin-top: 15%;
             right: 0;
         }
 
@@ -59,10 +59,8 @@
     &>:only-child {
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
-        transform: scale(1.1); 
+        transform: scale(1.1);
     }
-
-    
 
     &>*:only-child {
         background: rgba(190, 191, 195, 0);
