@@ -3,13 +3,13 @@
     margin-right: 15%;
     position: relative;
 
-    -webkit-transform: all 2s ease-in-out;
+    -webkit-transition: all 0.3s ease;
     ;
-    -moz-transform: all 2s ease-in-out;
+    -moz-transition: all 0.3s ease;
     ;
-    -o-transform: all 2s ease-in-out;
+    -o-transition: all 0.3s ease;
     ;
-    transform: all 2s ease-in-out;
+    transition: all 0.3s ease;
 
     .content {
         margin: 33px;
@@ -22,7 +22,7 @@
             margin-bottom: 5%;
             text-align: right;
             position: absolute;
-            margin-top: 15%;
+            bottom: 0;
             right: 0;
         }
 
@@ -57,9 +57,9 @@
 @mixin activeCardStyle {
 
     &>:only-child {
-        -webkit-transform: translate(0,-20px);
-        -ms-transform: translate(0,-20px);
-        transform: translate(0,-20px); 
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); 
     }
 
     
