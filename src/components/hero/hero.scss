@@ -7,6 +7,7 @@
         position: fixed;
         z-index: 100;
         width: 100%;
+        max-width: 1224px;
         top: 0;
     }
 
@@ -27,8 +28,8 @@
             line-height: 33px;
 
             .wrapper {
-                display: grid;
-                grid-template-columns: 2fr 6fr;
+                display: flex;
+                justify-content: space-between;
 
                 .logo {
                     margin-right: 25%;
@@ -54,25 +55,49 @@
         margin-top: 104px;
         margin-left: 0;
         height: 354px;
-        width: 600px;
+        width: 100%;
 
-        .header {
-            margin-bottom: 30px;
-            height: auto;
+        .info-flex:only-child {
+            margin: 0;
         }
 
-        .description {
-            margin-bottom: 30px;
+        .info-flex {
+            display: flex;
+            justify-content: space-between;
+
+            .flex-div-img {
+
+                img {
+                    height: 400px;
+                }
+            }
+
+            .flex-description {
+
+                width: 600px;
+
+                .header {
+                    margin-bottom: 30px;
+                    height: auto;
+                }
+
+                .description {
+                    margin-bottom: 30px;
+                }
+
+                .social-links {
+                    margin-top: 60px;
+
+                    img {
+                        width: 50px;
+                    }
+                }
+            }
         }
     }
 
 
-    .social-links img {
-        width: 50px;
-    }
 
-    .social-links {
-        margin-top: 140px;
-        margin-left: 25px;
-    }
+
+
 }
