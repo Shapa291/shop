@@ -1,15 +1,82 @@
+@media only screen and (max-width: 1300px) {
+    .accessories {
+        margin-left: 40px;
+        grid-template-columns: 40% 60%;
+    }
+
+    .mail {
+        margin: 200px 40px;
+    }
+}
+
 @media only screen and (max-width: 1224px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        grid-column-gap: 0;
 
+    }
+
+    .hero .info-block {
+        margin-left: 30px;
+    }
+
+    .mail {
+        margin: 100px 40px;
+    }
+
+    .accessories {
+        grid-template-columns: 1fr;
+
+        .description {
+            margin: auto auto;
+
+        }
+    }
 }
 
-@media only screen and (max-width: 992px) {
-    
+@media only screen and (max-width: 1018px) {
+    .flex-div-img {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 768px) {
-    
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 900px) {}
+
+@media only screen and (max-width: 830px) {
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    .mail {
+        display: none;
+    }
+
+    .accessories {
+        margin-top: 60px;
+
+        .accessories-list {
+            grid-template-columns: 1fr;
+        }
+    }
 }
 
-@media only screen and (max-width: 480px) {
-    
+@media only screen and (max-width: 780px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (min-width: 1px) {
+    .card {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    .accessories .description {
+        margin-left: 0;
+    }
 }

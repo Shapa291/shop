@@ -1,7 +1,6 @@
 .mail {
-    margin-top: 200px;
+    margin: 200px auto;
     height: 253px;
-    margin-bottom: 200px;
     border-radius: 25px;
     background-image: url('../../assets/mailBg.png');
     background-size: cover;
@@ -18,12 +17,14 @@
         margin-top: 55px;
         background: rgba(190, 191, 195, 0);
         grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr;
-        .evropochta{
+
+        .evropochta {
             font-size: 70px
         }
 
         div {
             background: rgba(190, 191, 195, 0);
+
             img {
                 background: rgba(190, 191, 195, 0);
                 width: 80%;

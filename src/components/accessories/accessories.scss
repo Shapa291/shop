@@ -1,29 +1,24 @@
 .accessories {
-    //min-height: 638px;
     height: auto;
-
     display: grid;
-    grid-template-columns:50% 50%;
+    grid-template-columns: 50% 50%;
     margin-bottom: 200px;
 
     .descritpion {
         margin-top: 10px;
-        margin-left: 0;
         height: 300px;
         width: 427px;
-        
-        .header{
-           margin-bottom: 30px;
+
+        .header {
+            margin-bottom: 30px;
         }
+
         .descr {
             width: 100%;
         }
     }
 
-    .accessories-list{
-        /*
-        width: 600px;
-        height: 638px; */
+    .accessories-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 50px;

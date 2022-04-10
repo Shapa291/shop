@@ -39,8 +39,15 @@ select {
 }
 
 body {
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-  }
+  //min-width: 100vw;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+Html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
