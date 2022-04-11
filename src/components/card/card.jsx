@@ -38,7 +38,8 @@ function Card({
   return (
     <div
       style={{ width: `${cardWidth}px`, height: `${cardHeight}` }}
-      className={cardClass} onClick={handleShowModal}
+      className={cardClass}
+      onClick={handleShowModal}
     >
       <div
         style={{
@@ -50,7 +51,7 @@ function Card({
       >
         <div className="item-name col-white">
           <div>
-            <img src={require(`../../assets/ledgers/ledger${logo}.png`)} />
+            <img alt="logo" src={require(`../../assets/ledgers/ledger${logo}.png`)} />
           </div>
           <div className="price">
             <div className="price-name fw-500 fs-24 col-grey">{name}</div>
@@ -60,7 +61,6 @@ function Card({
           </div>
         </div>
         <div className="description fs-16px fw-400 col-grey">{description}</div>
-        
       </div>
 
       {showModal && (

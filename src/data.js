@@ -1,9 +1,9 @@
 export const refsOPtions = ["Вначало", "Ассортимент", "Аксессуары", "Контакты"];
+
 export const mailLogo = [
   "evropochta",
   "sdek",
   "ozon",
-  ,
   "dhl",
   "wildberries",
   "pochta",

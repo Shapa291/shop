@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import "./variables.scss";
 
-*{
+* {
     font-family: 'Montserrat', sans-serif;
     margin: 0px auto;
 }
@@ -92,11 +92,10 @@ body {
 
 .col-dark-orange {
     color: #FFA5378C;
-    ;
 }
 
 .col-orange {
-    color: #FFA537;
+    color: $col-active-orange;
 }
 
 .col-active-btn {
@@ -108,22 +107,19 @@ body {
 }
 
 .col-total-black {
-    color: #000000;
+    color: $col-total-black;
 }
 
 .col-black {
-    color: #2C353D33;
+    color: $col-black;
 }
 
 .col-hard-white {
-    color: #FFFFFFCC;
-    ;
+    color: $col-hard-white;
 }
 
-//BUTTONS
 .btn {
-    //padding: 9px 35px;
-    border-radius: 8px;
+    border-radius: $btn-radius;
     color: $col-grey;
 }
 

@@ -1,11 +1,16 @@
 $one-line-height: -0.625em;
-
+$btn-radius: 8px;
 //COLORS
 $col-orange-btn: #FF6E30;
 $col-white: #FFFFFF;
 $col-grey: #C4C4C4;
-
+$col-black:#2C353D33;
+$col-total-black: #000000;
 $col-active-white: #FFFFFFE5;
 $col-active-orange: #FFA537;
-
+$col-hard-white: #FFFFFFCC;
 $col-of-site: #1E252B;
+$col-opacasity: rgba(190, 191, 195, 0);
+
+$active-card-path:'../assets/cards/activeCard.png';
+$active-smallCard-path: '../assets/cards/smallActiveCard.png';

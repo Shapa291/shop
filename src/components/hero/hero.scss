@@ -2,14 +2,14 @@
 
 .hero {
     margin-bottom: 200px;
+
     .navbar {
         position: fixed;
         z-index: 100;
         width: 100%;
         max-width: 1224px;
         top: 0;
-        margin: 0 0;
-        
+        margin: 0;
     }
 
     .header {
@@ -40,7 +40,6 @@
 
                 ul.refs {
                     margin: 0;
-                    //margin-left: 75%;
                     padding: 4px;
                 }
 
@@ -54,7 +53,6 @@
     }
 
     .info-block {
-
         margin-top: 104px;
         margin-left: 0;
         height: 354px;
@@ -68,15 +66,11 @@
             display: flex;
             justify-content: space-between;
 
-            .flex-div-img {
-
-                img {
-                    height: 400px;
-                }
+            .flex-div-img img {
+                height: 400px;
             }
 
             .flex-description {
-
                 width: 600px;
 
                 .header {
@@ -98,9 +92,4 @@
             }
         }
     }
-
-
-
-
-
 }

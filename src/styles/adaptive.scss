@@ -2,8 +2,8 @@
 
 @media only screen and (max-width: 1300px) {
     .accessories {
-        //margin-left: 40px;
         grid-template-columns: 40% 60%;
+
         .description {
             margin-left: 40px;
         }
@@ -19,7 +19,6 @@
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         grid-column-gap: 0;
-
     }
 
     .hero .info-block {
@@ -34,21 +33,23 @@
         grid-template-columns: 1fr;
 
         .description {
-            margin: auto auto;
-
+            margin: auto;
         }
     }
+
     .card {
-        background-image: url('../assets/activeCard.png');
+        background-image: url($active-card-path);
         background-size: 392px 314px;
     }
+
     .smallCard {
-        background-image: url('../assets/smallActiveCard.png');
-    background-size: 288px 314px;
+        background-image: url($active-smallCard-path);
+        background-size: 288px 314px;
     }
+
     .modal .modal-content .price-block .btn {
         background-color: $col-orange-btn;
-    color: $col-white;
+        color: $col-white;
     }
 }
 
@@ -57,10 +58,6 @@
         display: none;
     }
 }
-
-@media only screen and (max-width: 992px) {}
-
-@media only screen and (max-width: 900px) {}
 
 @media only screen and (max-width: 830px) {
     .product-list {
@@ -88,18 +85,12 @@
         }
 
         .modal-content {
-            .name {
-                
-            }
-
-            .info ul {
-                
-            }
 
             div.price-block {
                 div.price {
                     font-size: 50px !important;
                 }
+
                 .btn {
                     margin-top: 10px;
                 }
@@ -113,8 +104,6 @@
         width: 95%;
     }
 }
-
-@media only screen and (max-width: 768px) {}
 
 @media only screen and (max-width: 660px) {
     .flex-description {
@@ -144,7 +133,6 @@
 @media only screen and (max-width: 410px) {
     .card {
         background-size: 350px 314px;
-
         width: 350px !important;
 
         .content {

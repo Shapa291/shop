@@ -1,10 +1,10 @@
 import "./mail.scss";
-import evropochta from "../../assets/evropochta.png";
-import sdek from "../../assets/sdek.svg";
-import pochta from "../../assets/pochta.png";
-import dhl from "../../assets/dhl.svg";
-import wildberries from "../../assets/wildberries.png";
-import ozon from "../../assets/ozon.png";
+import evropochta from "../../assets/mail/evropochta.png";
+import sdek from "../../assets/mail/sdek.svg";
+import pochta from "../../assets/mail/pochta.png";
+import dhl from "../../assets/mail/dhl.svg";
+import wildberries from "../../assets/mail/wildberries.png";
+import ozon from "../../assets/mail/ozon.png";
 
 function Mail() {
   return (
@@ -13,22 +13,22 @@ function Mail() {
         Доставляем с помощью
         <div className="services">
           <div className="evropochta">
-            <img src={evropochta} />
+            <img alt="mail" src={evropochta} />
           </div>
           <div>
-            <img src={sdek} />
+            <img alt="mail" src={sdek} />
           </div>
           <div>
-            <img src={ozon} />
+            <img alt="mail" src={ozon} />
           </div>
           <div>
-            <img src={dhl} />
+            <img alt="mail" src={dhl} />
           </div>
           <div>
-            <img src={wildberries} />
+            <img alt="mail" src={wildberries} />
           </div>
           <div>
-            <img src={pochta} />
+            <img alt="mail" src={pochta} />
           </div>
         </div>
       </div>

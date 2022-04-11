@@ -1,32 +1,34 @@
+@import "../../styles/variables.scss";
+
 .mail {
     margin: 200px auto;
     height: 253px;
     border-radius: 25px;
-    background-image: url('../../assets/mailBg.png');
+    background-image: url('../../assets/mail/mailBg.png');
     background-size: cover;
 
     .content {
         text-align: center;
         padding-top: 55px;
         height: 142px;
-        background: rgba(190, 191, 195, 0);
+        background: $col-opacasity;
     }
 
     .services {
         display: grid;
         margin-top: 55px;
-        background: rgba(190, 191, 195, 0);
+        background: $col-opacasity;
         grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr;
 
         .evropochta {
-            font-size: 70px
+            font-size: 70px;
         }
 
         div {
-            background: rgba(190, 191, 195, 0);
+            background: $col-opacasity;
 
             img {
-                background: rgba(190, 191, 195, 0);
+                background: $col-opacasity;
                 width: 80%;
             }
         }
