@@ -38,7 +38,7 @@ function Card({
   return (
     <div
       style={{ width: `${cardWidth}px`, height: `${cardHeight}` }}
-      className={cardClass}
+      className={cardClass} onClick={handleShowModal}
     >
       <div
         style={{
@@ -60,9 +60,7 @@ function Card({
           </div>
         </div>
         <div className="description fs-16px fw-400 col-grey">{description}</div>
-        <div className="btn col-white fw-600 fs-16" onClick={handleShowModal}>
-          Подробнее
-        </div>
+        
       </div>
 
       {showModal && (

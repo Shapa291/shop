@@ -10,6 +10,7 @@
 .card:hover {
     background-image: url('../../assets/activeCard.png');
     background-size: 392px 314px;
+    cursor: pointer;
     @include activeCardStyle;
     
 }
@@ -23,6 +24,7 @@
 .smallCard:hover {
     background-image: url('../../assets/smallActiveCard.png');
     background-size: 288px 314px;
+    cursor: pointer;
     @include activeCardStyle;
 }
 

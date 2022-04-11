@@ -47,10 +47,15 @@
     &>.modal-content {
         .name {
             text-align: center;
+            margin-top: 20px;
+                margin-bottom: 30px;
         }
 
         .info {
             margin-left: 2%;
+            ul {
+                padding-top: 20px;
+            }
         }
 
         li {
@@ -61,7 +66,12 @@
     .price-block {
         margin-top: 5%;
         display: grid;
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr;
+        
+        .btn {
+            height: 50px;
+            margin-top: 30px;
+        }
     }
 
     //temporary
