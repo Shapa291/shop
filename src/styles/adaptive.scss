@@ -1,7 +1,10 @@
 @media only screen and (max-width: 1300px) {
     .accessories {
-        margin-left: 40px;
+        
         grid-template-columns: 40% 60%;
+        .description {
+            margin-left: 40px;
+        }
     }
 
     .mail {
@@ -63,11 +66,23 @@
     }
 }
 
-@media only screen and (max-width: 780px) {}
+@media only screen and (max-width: 780px) {
+    .hero .info-block {
+        width: 95%;
+    }
+}
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 567px) {
+    .refs {
+        display: none;
+    }
+}
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    .hero .info-block {
+        width: 90%;
+    }   
+}
 
 @media only screen and (min-width: 1px) {
     .card {

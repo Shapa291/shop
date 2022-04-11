@@ -2,13 +2,14 @@
 
 .hero {
     margin-bottom: 200px;
-
     .navbar {
         position: fixed;
         z-index: 100;
         width: 100%;
         max-width: 1224px;
         top: 0;
+        margin: 0 0;
+        
     }
 
     .header {
@@ -22,9 +23,9 @@
         }
 
         .content {
-            position: absolute;
-            top: 50%;
-            margin-top: 2*$one-line-height;
+            //position: absolute;
+            //top: 50%;
+            //margin-top: 2*$one-line-height;
             line-height: 33px;
 
             .wrapper {
@@ -32,12 +33,13 @@
                 justify-content: space-between;
 
                 .logo {
-                    margin-right: 25%;
+                   // margin-right: 25%;
+                   margin: 0px 0;
                 }
 
                 ul.refs {
                     margin: 0;
-                    margin-left: 75%;
+                    //margin-left: 75%;
                     padding: 4px;
                 }
 
