@@ -1,6 +1,8 @@
+@import "./variables.scss";
+
 @media only screen and (max-width: 1300px) {
     .accessories {
-        
+        //margin-left: 40px;
         grid-template-columns: 40% 60%;
         .description {
             margin-left: 40px;
@@ -36,6 +38,18 @@
 
         }
     }
+    .card {
+        background-image: url('../assets/activeCard.png');
+        background-size: 392px 314px;
+    }
+    .smallCard {
+        background-image: url('../assets/smallActiveCard.png');
+    background-size: 288px 314px;
+    }
+    .modal .modal-content .price-block .btn {
+        background-color: $col-orange-btn;
+    color: $col-white;
+    }
 }
 
 @media only screen and (max-width: 1018px) {
@@ -64,6 +78,34 @@
             grid-template-columns: 1fr;
         }
     }
+
+    .modal {
+        grid-template-columns: 1fr;
+        justify-content: center;
+
+        .logo {
+            display: none;
+        }
+
+        .modal-content {
+            .name {
+                
+            }
+
+            .info ul {
+                
+            }
+
+            div.price-block {
+                div.price {
+                    font-size: 50px !important;
+                }
+                .btn {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 780px) {
@@ -72,22 +114,58 @@
     }
 }
 
-@media only screen and (max-width: 567px) {
-    .refs {
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 660px) {
+    .flex-description {
+        .header {
+            padding-right: 70px;
+        }
+
+        div.description {
+            margin-right: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper ul.refs {
         display: none;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .hero .info-block {
-        width: 90%;
-    }   
+    .accessories .descritpion {
+        width: auto;
+        margin: 10px 30px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .card {
+        background-size: 350px 314px;
+
+        width: 350px !important;
+
+        .content {
+            width: 300px !important;
+        }
+    }
+
+    .card:hover {
+        background-size: 370px 314px;
+    }
+
+    .smallCard {
+        background-size: 288px 314px;
+    }
 }
 
 @media only screen and (min-width: 1px) {
     .card {
         margin-right: 0px;
     }
+
 }
 
 @media only screen and (min-width: 1224px) {
