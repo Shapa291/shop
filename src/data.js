@@ -10,7 +10,7 @@ export const mailLogo = [
   "ozon",
   "dhl",
   "wildberries",
-  "pochta",
+  "belpochta",
 ];
 export const products = [
   {
