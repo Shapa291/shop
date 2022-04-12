@@ -5,6 +5,7 @@ import "./assortment.scss";
 function Assortment() {
   return (
     <div className="assortment container">
+      <span id="assortmentAnchor"></span>
       <div className="info-block">
         <div className="header fs-48 col-white col-white">
           Ассортимент кошельков
