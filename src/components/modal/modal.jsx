@@ -4,7 +4,6 @@ import "./modal.scss";
 function Modal({ onHide, name, fullDescription, cost, logo, peculiarities }) {
   useKeyPress("Escape", onHide);
   console.log(logo);
-  const btnClickAction = "location.href='http://www.example.com';";
   return (
     <div className="modal-container" onClick={onHide}>
       <div
@@ -28,8 +27,8 @@ function Modal({ onHide, name, fullDescription, cost, logo, peculiarities }) {
             </ul>
           </div>
           <div className="price-block">
-            <div className="price col-orange">{cost}</div>
-            <a className="btn fw-600 fs-16" href="https://t-do.ru/Ledgerblr">Заказать</a>
+            <div className="price fs-70 col-orange">{cost}</div>
+            <div className="btn fw-600 fs-16">Заказать</div>
           </div>
         </div>
         <div className="description col-grey fs-14 fw-400">

@@ -8,8 +8,8 @@ function Accessories() {
       <span id="accessoriesAnchor"></span>
     <div className="accessories container">
       <div className="descritpion fw-500">
-        <div className="acsHeader col-white fs-48">Аксессуары</div>
-        <div className="acsDesc col-grey fs-18">
+        <div className="col-white fs-48">Аксессуары</div>
+        <div className="col-grey fs-18">
           Также у нас имеются различные акссесураы для осущетсвелени еще большей
           безопасности ваших крипто активов
         </div>
