@@ -6,6 +6,10 @@
     margin: 0px auto;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $col-of-site;
     width: device-width;
@@ -130,5 +134,5 @@ body {
 
 span {
     position: relative;
-    top:-70px
+    top: -70px
 }
