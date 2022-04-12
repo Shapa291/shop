@@ -12,7 +12,7 @@ function Header() {
           </div>
           <ul className="refs fs-16px fw-500 col-grey">
             {refsOPtions.map((el, index) => (
-              <li key={index} onClick={clickActions[index]}>{el}</li>
+              <li key={index} ><a href={clickActions[index]}>{el}</a></li>
             ))}
           </ul>
         </div>

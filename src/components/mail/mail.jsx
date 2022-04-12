@@ -9,7 +9,7 @@ import { mailLogo } from "../../data";
 
 function Mail() {
   return (
-    <div className="mail container">
+    <div id="mail" className="mail container">
       <div className="col-hard-white fs-24 fw-500 content">
         Доставляем с помощью
         <div className="services">
