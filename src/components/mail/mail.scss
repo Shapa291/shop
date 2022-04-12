@@ -22,12 +22,16 @@
 
         .evropochta {
             font-size: 70px;
+            img {
+                margin-bottom: 40px;
+            }
         }
 
         div {
             background: $col-opacasity;
 
             img {
+                //margin-bottom: 30px;
                 background: $col-opacasity;
                 width: 80%;
             }

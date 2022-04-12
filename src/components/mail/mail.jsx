@@ -1,8 +1,8 @@
 import "./mail.scss";
 import evropochta from "../../assets/mail/evropochta.png";
-import sdek from "../../assets/mail/sdek.svg";
+import sdek from "../../assets/mail/sdek.png";
 import pochta from "../../assets/mail/pochta.png";
-import dhl from "../../assets/mail/dhl.svg";
+import dhl from "../../assets/mail/dhl.png";
 import wildberries from "../../assets/mail/wildberries.png";
 import ozon from "../../assets/mail/ozon.png";
 

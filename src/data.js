@@ -1,4 +1,8 @@
 export const refsOPtions = ["Вначало", "Ассортимент", "Аксессуары", "Контакты"];
+export const clickActions = ["location.href='https://ru.stackoverflow.com';",
+"location.href='https://ru.stackoverflow.com';",
+"location.href='https://ru.stackoverflow.com';",
+"location.href='https://ru.stackoverflow.com';"];
 
 export const mailLogo = [
   "evropochta",
