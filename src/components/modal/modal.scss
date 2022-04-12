@@ -38,7 +38,7 @@
     grid-template-columns: 3fr 5fr;
 
     &>.description {
-        width: 100%;
+        width: 85%;
         height: auto;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -55,6 +55,7 @@
             margin-left: 2%;
             ul {
                 padding-top: 20px;
+                list-style-type: disc;
             }
         }
 
@@ -69,8 +70,21 @@
         grid-template-columns: 1fr 1fr;
         
         .btn {
+            text-decoration: none;
+            display: block;
             height: 50px;
-            margin-top: 30px;
+            width: 120px;
+            margin-top: 25px;
+            text-align: center;
+            line-height: 50px;
+            background-color: $col-orange-btn;
+            color: $col-white;
+        }
+
+        .price {
+            font-size: 60px;
+            margin-left: 0;
+            
         }
     }
 

@@ -12,6 +12,10 @@
     .mail {
         margin: 200px 40px;
     }
+
+    .modal {
+        max-width: 1000px;
+    }
 }
 
 @media only screen and (max-width: 1224px) {
@@ -53,6 +57,33 @@
     }
 }
 
+@media only screen and (max-width: 1050px) {
+    .modal {
+        max-width: 800px;
+
+        .modal-content {
+            div.price-block {
+                div.price {
+                    font-size: 50px !important;
+                }
+            }
+
+            .info ul {
+                margin-right: 30px;
+
+                li {
+                    font-size: 13px !important;
+                }
+
+            }
+        }
+
+        .description {
+            font-size: 14px !important;
+        }
+    }
+}
+
 @media only screen and (max-width: 1018px) {
     .flex-div-img {
         display: none;
@@ -79,6 +110,7 @@
     .modal {
         grid-template-columns: 1fr;
         justify-content: center;
+        max-width: 700px;
 
         .logo {
             display: none;
@@ -87,9 +119,7 @@
         .modal-content {
 
             div.price-block {
-                div.price {
-                    font-size: 50px !important;
-                }
+
 
                 .btn {
                     margin-top: 10px;
@@ -105,6 +135,12 @@
     }
 }
 
+@media only screen and (max-width: 740px) {
+    .modal {
+        max-width: 630px;
+    }
+}
+
 @media only screen and (max-width: 660px) {
     .flex-description {
         .header {
@@ -115,11 +151,44 @@
             margin-right: 40px;
         }
     }
+
+    .modal {
+        max-width: 570px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .wrapper ul.refs {
         display: none;
+    }
+
+    .modal {
+        max-width: 500px;
+
+        .modal-content {
+            .info {
+                margin-left: 35px;
+            }
+        }
+
+        .price-block {
+            margin-left: 35px;
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .modal {
+        min-height: 400px;
+        max-width: 440px;
+
+        .modal-content .price-block {
+            //margin-top: 45px;
+        }
+
+        .description {
+            display: none;
+        }
     }
 }
 
@@ -127,6 +196,10 @@
     .accessories .descritpion {
         width: auto;
         margin: 10px 30px;
+    }
+
+    .modal {
+        max-width: 390px;
     }
 }
 
@@ -147,7 +220,29 @@
     .smallCard {
         background-size: 288px 314px;
     }
+
+    .modal {
+        max-width: 350px;
+    }
+
+    .info-block {
+        .header {
+            font-size: 40px !important;
+        }
+
+        .description {
+            font-size: 15px !important;
+        }
+    }
+    .acsHeader {
+        font-size: 40px !important;
+    }
+    .acsDesc {
+        font-size: 15px !important;
+    }
+
 }
+
 
 @media only screen and (min-width: 1px) {
     .card {
@@ -159,5 +254,42 @@
 @media only screen and (min-width: 1224px) {
     .accessories .description {
         margin-left: 0;
+    }
+}
+
+@media only screen and (max-height: 850px) {
+    .hero {
+        margin-bottom: 100px;
+
+        .social-links {
+            margin-top: 40px !important
+        }
+    }
+}
+
+@media only screen and (max-height: 730px) {
+    .modal {
+
+        .description {
+            display: none;
+        }
+
+        .modal-content .price-block div.price {
+            font-size: 50px !important;
+        }
+    }
+}
+
+@media only screen and (max-height: 520px) {
+    .modal {
+        min-height: auto;
+
+        .description {
+            display: none;
+        }
+
+        .modal-content .price-block div.price {
+            font-size: 50px !important;
+        }
     }
 }
