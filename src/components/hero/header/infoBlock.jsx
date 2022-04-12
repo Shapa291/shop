@@ -1,5 +1,5 @@
 import SocialLinks from "./socialLinks";
-import poster from "../../../assets/poster.svg";
+import poster from "../../../assets/poster.png";
 
 function InfoBlock() {
   return (

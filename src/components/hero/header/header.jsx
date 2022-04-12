@@ -1,5 +1,6 @@
 import { refsOPtions } from "../../../data";
 import ledgerLogo from "../../../assets/ledgersLogo/ledger-logo-long.png";
+import {clickActions} from "../../../data";
 
 function Header() {
   return (
@@ -11,7 +12,7 @@ function Header() {
           </div>
           <ul className="refs fs-16px fw-500 col-grey">
             {refsOPtions.map((el, index) => (
-              <li key={index}>{el}</li>
+              <li key={index} onClick={clickActions[index]}>{el}</li>
             ))}
           </ul>
         </div>
