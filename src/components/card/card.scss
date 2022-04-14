@@ -5,14 +5,13 @@
     width: 392px;
     height: 314px;
     @include cardStyle;
+    cursor: pointer;
 }
 
 .card:hover {
     background-image: url('../'+ $active-card-path);
     background-size: 392px 314px;
-    cursor: pointer;
     @include activeCardStyle;
-
 }
 
 .smallCard {
@@ -24,7 +23,6 @@
 .smallCard:hover {
     background-image: url('../'+ $active-smallCard-path);
     background-size: 288px 314px;
-    cursor: pointer;
     @include activeCardStyle;
 }
 

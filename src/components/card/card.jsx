@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {ReactDOM, createPortal, useState } from "react";
 import Modal from "../modal/modal";
 import "./card.scss";
 
@@ -51,7 +51,10 @@ function Card({
       >
         <div className="item-name col-white">
           <div>
-            <img alt="logo" src={require(`../../assets/ledgers/ledger${logo}.png`)} />
+            <img
+              alt="logo"
+              src={require(`../../assets/ledgers/ledger${logo}.png`)}
+            />
           </div>
           <div className="price">
             <div className="price-name fw-500 fs-24 col-grey">{name}</div>
@@ -63,16 +66,19 @@ function Card({
         <div className="description fs-16px fw-400 col-grey">{description}</div>
       </div>
 
-      {showModal && (
-        <Modal
-          name={name}
-          peculiarities={peculiarities}
-          fullDescription={fullDescription}
-          cost={cost}
-          logo={logo}
-          onHide={handleCloseModal}
-        />
-      )}
+      {showModal &&
+        // use react portal
+
+        ReactDOM.createPortal(
+          <Modal
+            name={name}
+            peculiarities={peculiarities}
+            fullDescription={fullDescription}
+            cost={cost}
+            logo={logo}
+            onHide={handleCloseModal}
+          />
+        )}
     </div>
   );
 }
