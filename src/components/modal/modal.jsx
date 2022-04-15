@@ -1,17 +1,14 @@
 import { useKeyPress } from "../../hooks/useKeyPress";
 import "./modal.scss";
+import ReactDom from "react-dom";
 
-function Modal({ onHide, name, fullDescription, cost, logo, peculiarities }) {
-  useKeyPress("Escape", onHide);
-  return (
-    <div className="modal-container" onClick={() => {console.log("asdf"); onHide()}}>
+function Modal({name, fullDescription, cost, logo, peculiarities, open, onClose }) {
+  useKeyPress("Escape", onClose);
+  if (!open) return null;
+  return ReactDom.createPortal(
+    <div className="modal-container" onClick={onClose}>
       <div
         className="modal container col-white"
-        onClick={(event) => {
-          console.log("prevent")
-          event.preventDefault();
-          event.stopPropagation();
-        }}
       >
         <div className="logo">
           <img src={require(`../../assets/modalImages/${logo}.png`)} />
@@ -38,8 +35,8 @@ function Modal({ onHide, name, fullDescription, cost, logo, peculiarities }) {
           {fullDescription}
         </div>
       </div>
-    </div>
-  );
+    </div>,
+  document.getElementById("portal"));
 }
 
 export default Modal;

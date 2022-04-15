@@ -1,4 +1,4 @@
-import {ReactDOM, createPortal, useState } from "react";
+import React, { useState } from "react";
 import Modal from "../modal/modal";
 import "./card.scss";
 
@@ -11,10 +11,7 @@ function Card({
   peculiarities,
   fullDescription,
 }) {
-  const [showModal, seetShowMoadl] = useState(false);
-
-  const handleShowModal = () => seetShowMoadl(true);
-  const handleCloseModal = () => seetShowMoadl(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   let cardHeight, cardWidth, my, mx, cardBodyHeight, cardBodyWidth, cardClass;
   if (type === "accessory") {
@@ -39,7 +36,7 @@ function Card({
     <div
       style={{ width: `${cardWidth}px`, height: `${cardHeight}` }}
       className={cardClass}
-      onClick={handleShowModal}
+      onClick={() => setIsOpen(true)}
     >
       <div
         style={{
@@ -66,19 +63,15 @@ function Card({
         <div className="description fs-16px fw-400 col-grey">{description}</div>
       </div>
 
-      {showModal &&
-        // use react portal
-
-        ReactDOM.createPortal(
-          <Modal
-            name={name}
-            peculiarities={peculiarities}
-            fullDescription={fullDescription}
-            cost={cost}
-            logo={logo}
-            onHide={handleCloseModal}
-          />
-        )}
+      <Modal
+        name={name}
+        peculiarities={peculiarities}
+        fullDescription={fullDescription}
+        cost={cost}
+        logo={logo}
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+      />
     </div>
   );
 }
